@@ -1,0 +1,55 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Camping in Georgia's State Parks</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<header id="header">	
+			<h1 id="title">Camping in Georgia's State Parks</h1>
+			<h3 id="tagline">Weather Information and Reservations</h3>
+		</header>
+		<div id="wrapper">
+			<div class="group">
+				<div id="left">
+					<div class="choose">Choose a State Park From the Map:</div>
+					<div class="content-wrapper">
+						<div id="map">
+						</div>
+					</div>
+				</div>
+				<div id="search">
+					<div class="choose">Choose a State Park From the List:</div>
+					<div class="content-wrapper">
+						<select id="parks" onchange="myClick(this.value)">
+							<option value="" class="parks" selected disabled>Choose One:</option>
+							
+						</select>
+					</div>
+					<div class="choose">Enter your own campsite:</div>
+					<div class="content-wrapper">
+						<div id="searchDetails">
+							<label class="searchBy" for="locationInput"> Search by location:</label><br>
+							<input id="locationInput" type="text">
+						</div>
+						<!-- <div id="searchDetails">
+							<label class="searchBy" for="latInput"> Search by coordinates:</label><br>
+							<input id="latInput" type="text" placeholder="Enter a latitude">
+							<input id="longInput" type="text" placeholder="Enter a longitude">
+							<div class="submit">Search</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/state_parks.js"></script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-u5QTSZ8V1PZDq0etMNIWoxaYWR3_4Eo&callback=initMap&libraries=places">
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

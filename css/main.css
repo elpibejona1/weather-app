@@ -1,0 +1,266 @@
+* {
+	font-family: 'Open Sans', Sans-serif;
+}
+
+/*--------------------------- Header */
+
+#header {
+	width: 100%;
+	background-color: #FF4C00;
+	padding: 20px 0;
+}
+
+#title, #tagline {
+	display: block;
+	position: relative;
+	color: #ffffff;
+	font-weight: extrabold;
+}
+
+#title {
+	font-size: 45px;
+	margin: 0 0 0 10%;
+}
+
+#tagline {
+	font-style: italic;
+	margin: 0 0 0 10%;
+}
+/*--------------------------- General Styles */
+body {
+	background-color: #ffffff;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+.choose {
+	background-color: rgba(20, 133, 204, .7);
+	margin: 0;
+	color: #ffffff;
+	margin: 20px 0;
+	padding: 15px;
+	font-size: 1.5em;
+}
+
+/*--------------------------- Map Div */
+
+#left {
+	float: left;
+	width: 55%;
+}
+
+#map {
+	height: 545px;
+	width: 100%;
+	margin: 0;
+}
+
+/*--------------------------- Info Windows */
+
+.graphics {
+	padding: 0;
+	margin: -10px 0 -25px 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+td, th {
+	width: 33%;
+	border: 1px solid black;
+	padding: 8px;
+	margin: 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+td {
+	font-size: 15px;
+}
+
+.parkTitle {
+	margin: 0 0 10px 0;
+	text-align: center;
+	background-color: rgba(20, 133, 204, .7);
+	padding: 10px;
+	color: #ffffff;
+}
+
+#siteNotice {
+	width: 100%;
+}
+
+#bodyContent {
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+
+.reserveSite, .getDirections {
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	background-color: rgba(0, 204, 122, .7);
+	color: white;
+	font-weight: extrabold;
+	display: block;
+	margin: 5px 0;
+	padding: 10px;
+}
+
+.reserveSite:hover, .getDirections:hover {
+	background-color: rgba(0, 204, 122, .9)
+}
+
+.reserveSite:active, .getDirections:active {
+	background-color: rgba(0, 204, 122, 1)
+}
+
+/*--------------------------- Park List */
+
+#parks {
+	width: 100%;
+}
+
+#parks,
+.parks {
+	font-size: 18px;
+	padding: 5px;
+	text-align: center;
+}
+
+/*--------------------------- Search Form */
+
+#search {
+	width: 40%;
+	float: right;
+	padding: 0;
+	margin: 0 0 100px 0;
+	
+}
+
+#search h2 {
+	margin: 20px 0;
+	color: #ffffff;
+	background-color: rgba(20, 133, 204, .7);
+	padding: 15px;
+}
+
+#search label {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+#search input {
+	display: block;
+	border: 2px inset;
+	width: 100%;
+	padding: 8px;
+	font-size: 18px;
+}
+
+#searchDetails {
+	border: 2px solid black;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+#latInput,
+#longInput { margin-bottom: 15px; }
+
+.searchBy {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+
+.submit {
+	text-align: center;
+	background-color: rgba(0, 204, 122, .7);
+	color: white;
+	font-weight: extrabold;
+	padding: 15px;
+	font-size: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: rgba(0, 204, 122, .9);
+}
+
+.submit:active {
+	background-color: rgba(0, 204, 122, 1);
+}
+
+/*----------Clear Fix-------------*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------Media Queries-------------*/
+@media only screen and (max-width: 1221px) {
+	#wrapper {
+		width: 95%;
+		left: 5%;
+	}
+}
+
+@media only screen and (max-width: 807px) {
+	#wrapper {
+		width: 100%;
+		left: 0;
+	}
+
+	.content-wrapper { padding: 0 15px; }
+
+	#left {
+		float: none;
+		width: 100%;
+	}
+	
+	#map {
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	#search {
+		width: 100%;
+		float: none;
+	}
+
+	#title, #tagline {
+	margin: 0 20px;
+	left: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 569px) {
+	#bodyContent, #siteNotice {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+	table { display: block; table-layout: fixed; }
+
+	th { word-wrap: break-word; }
+}
